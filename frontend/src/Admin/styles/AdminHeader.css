@@ -1,0 +1,46 @@
+/* AdminHeaderStyle.css */
+
+.admin-header {
+    background-color: hsl(0, 0%, 20%);
+    ;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-heading {
+    color: #ffffff;
+    /* White text */
+    font-size: 1.5rem;
+    /* Font size for heading */
+    font-weight: bold;
+    /* Bold text */
+}
+
+.admin-navbar {
+    display: flex;
+    gap: 20px;
+    /* Space between links */
+}
+
+.admin-link {
+    text-decoration: none;
+    /* Remove underline */
+    color: #ffffff;
+    /* White text */
+    font-weight: bold;
+    /* Bold text */
+    padding: 10px 15px;
+    /* Padding for clickable area */
+    transition: background-color 0.3s;
+    /* Smooth transition on hover */
+}
+
+.admin-link:hover {
+    background-color: #555555;
+    /* Darker color on hover */
+    border-radius: 5px;
+    /* Rounded corners */
+}

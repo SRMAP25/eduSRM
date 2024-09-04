@@ -1,0 +1,166 @@
+/* Admin Login Container */
+
+.admin-login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #000;
+    ;
+}
+
+
+/* Admin Login Form */
+
+.admin-login-form {
+    background: hsl(0, 0%, 20%);
+    ;
+    /* White background for the form */
+    border-radius: 10px;
+    margin-top: 40px;
+    /* Smooth corners */
+    padding: 30px;
+    /* Padding inside the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
+    width: 350px;
+    /* Fixed width for consistency */
+    transition: box-shadow 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+.admin-login-form:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Slightly stronger shadow on hover */
+}
+
+
+/* Form Heading */
+
+.admin-login-form h1 {
+    text-align: center;
+    /* Centered heading */
+    color: #fff;
+    /* Dark gray text color */
+    font-size: 24px;
+    /* Larger font size for heading */
+    margin-bottom: 20px;
+    /* Space between heading and form elements */
+}
+
+
+/* Form Input Styling */
+
+.input {
+    margin-bottom: 15px;
+    color: hsl(0, 0%, 20%);
+    ;
+    /* Space between form groups */
+}
+
+.input input {
+    width: 100%;
+    /* Full width inputs */
+    padding: 10px;
+    /* Padding inside the input */
+    border: 1px solid #ccc;
+    /* Light gray border */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: border-color 0.3s;
+    /* Smooth border transition */
+}
+
+.input input:focus {
+    border-color: #007bff;
+    /* Blue border on focus */
+    outline: none;
+    /* Remove default outline */
+}
+
+label {
+    color: #fff;
+}
+
+
+/* Submit Button Styling */
+
+.submit {
+    display: flex;
+    /* Use flex for horizontal alignment */
+    justify-content: space-between;
+    /* Space out the buttons */
+}
+
+.submit .submitButton {
+    background-color: #fff;
+    /* Blue button color */
+    color: #000;
+    /* White text */
+    padding: 10px 20px;
+    width: 100%;
+    /* Padding for the button */
+    border-radius: 5px;
+    /* Rounded corners */
+    border: 20px;
+    margin-top: 10px;
+    /* Remove border */
+    cursor: pointer;
+    /* Cursor changes to pointer */
+    transition: background-color 0.3s;
+    /* Smooth background transition */
+}
+
+.submit .submitButton:hover {
+    background-color: rgb(233, 229, 229);
+    /* Red background on hover */
+    color: black;
+    box-shadow: 0 2px 20px rgb(233, 229, 229);
+    /* Darker blue on hover */
+}
+
+.submit .submitButtonGrey {
+    background-color: #000;
+    /* Gray background for secondary buttons */
+    color: #000;
+    /* Dark gray text */
+    padding: 10px 20px;
+    /* Padding for the button */
+    border-radius: 5px;
+    /* Rounded corners */
+    text-decoration: none;
+    /* Remove underline */
+    transition: background-color 0.3s;
+    /* Smooth transition */
+}
+
+.submit .submitButtonGrey:hover {
+    background-color: #aaa;
+    /* Darker gray on hover */
+}
+
+
+/* Error Message Styling */
+
+.toaster {
+    background-color: #fdd;
+    /* Light red background */
+    border: 1px solid #e74c3c;
+    /* Red border */
+    color: #e74c3c;
+    /* Red text color */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px;
+    /* Padding inside the error message */
+    margin-top: 10px;
+    /* Space above error message */
+    text-align: center;
+    /* Centered error message */
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+}
