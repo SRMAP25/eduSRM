@@ -1,12 +1,56 @@
 import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import Layout from "./Admin/Layout";
+import Dashboard from "./Admin/Dashboard";
+import CourseView from "./Admin/CourseView";
+import EditCourses from "./Admin/EditCourses";
+import Login from "./Admin/Login";
+import EditTopics from "./Admin/EditTopics";
+import HeroSection from "./Pages/HeroSection"
+import SignUp from "./Pages/SignUp"
+import EditUsers from "./Admin/EditUsers";
 
 function App() {
-  return (
-    <>
-      <h1 className="bg-blue-400">Hello Rohith Keep going</h1>
-      <h1 className="text-red-500">Hello Rohith Keep going</h1>
-      <h1>dfgs</h1>
-    </>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <HeroSection />,
+    },
+    {
+      path: "/admin/login",
+      element: <Login />,
+    },
+    {
+      path: "/user/login",
+      element: <SignUp />,
+    },
+    {
+      path: "/admin",
+      element: <Layout />,
+      children: [
+        {
+          path: "/admin/dashboard",
+          element: <Dashboard />,
+        },
+        {
+          path: "/admin/courses",
+          element: <CourseView />,
+        },
+        {
+          path: "/admin/edit-courses",
+          element: <EditCourses />,
+        },
+        {
+          path: "/admin/edit-topics",
+          element: <EditTopics />,
+        },{
+          path: "/admin/edit-users",
+          element: <EditUsers />,
+        },
+      ],
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 export default App;
