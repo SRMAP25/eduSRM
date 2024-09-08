@@ -1,19 +1,15 @@
 const mongoose = require('mongoose'); // Erase if already required
 
 // Declare the Schema of the Mongo model
-var userSchema = new mongoose.Schema({
-    name:{
+var courseSchema = new mongoose.Schema({
+    courseName:{
         type:String,
         required:true
     },
-    age:{
-        type:Number,
-    },
-    email:{
+    description:{
         type:String
-    },
-    
+    }
 });
 
 //Export the model
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('Course', courseSchema);

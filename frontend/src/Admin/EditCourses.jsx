@@ -3,6 +3,7 @@ import Table from "./Table";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
+
 const EditCourses = () => {
   const columns = [
     {
@@ -70,6 +71,7 @@ const EditCourses = () => {
       // _cellProps: { id: { scope: "row" } },
     },
   ];
+
 
   return (
     <div className="container m-0 p-0">

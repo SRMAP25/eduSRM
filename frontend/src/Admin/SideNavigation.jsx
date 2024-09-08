@@ -18,7 +18,7 @@ export default function SideNavigation() {
             <Sidebar.Item href="/admin/edit-topics">Edit Topics</Sidebar.Item>
           </Sidebar.Collapse>
 
-          <Sidebar.Item href="#" icon={FaUser}>
+          <Sidebar.Item href="/admin/users" icon={FaUser}>
             Users
           </Sidebar.Item>
 

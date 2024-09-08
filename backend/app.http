@@ -1,13 +1,10 @@
 ### Get all Users Data
-
 GET http://localhost:3000/admin/users
 
 ### Get specific user data by name
-
 GET http://localhost:3000/admin/users/ravi
 
 ### Update user data by specific name
-
 POST http://localhost:3000/admin/user/ravi
 content-type: application/json
 
@@ -20,12 +17,22 @@ POST http://localhost:3000/admin/users/
 content-type: application/json
 
 {
-    "name":"ravi",
-    "age": "69"
+    "name":"raju",
+    "age": "18",
+    "email":"raju143@gmail.com"
+
 }
 
+### Get all courses Data
+GET http://localhost:3000/admin/courses
 
-
+### Add new course
+POST http://localhost:3000/admin/courses
+content-type: application/json
+{
+    "courseName":"HTML",
+    "description": "Structure of website"
+}
 
 
 

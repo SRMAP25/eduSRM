@@ -1,11 +1,28 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const User = require("./Models/User");
+const Course = require("./Models/Course");
 const { default: mongoose } = require("mongoose");
 
-
+app.use(cors());
 app.use(express.json());
 
+// To get course details
+app.get("/admin/courses/", async (req, res) => {
+  const data = await Course.find();
+  res.status(200).json({ length: data.length, data: data });
+});
+
+// To add course details
+app.post("/admin/courses/", async (req, res) => {
+  const { courseName, description } = req.body;
+  await Course.create({
+    courseName: courseName,
+    description: description,
+  });
+  res.status(200).json({ msg: "PosT Success" });
+});
 
 //  To get all Users
 app.get("/admin/users/", async (req, res) => {
@@ -20,8 +37,8 @@ app.get("/admin/users/:name", async (req, res) => {
 });
 // To create new user
 app.post("/admin/users/", async (req, res) => {
-  const { name, age } = req.body;
-  const data = await User.create({ name: name, age: age });
+  const { name, age, email } = req.body;
+  const data = await User.create({ name: name, age: age, email: email });
   res.status(200).json({ length: data.length, data });
 });
 // To update user details by user n

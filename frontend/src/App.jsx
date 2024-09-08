@@ -45,7 +45,7 @@ function App() {
           path: "/admin/edit-topics",
           element: <EditTopics />,
         },{
-          path: "/admin/edit-users",
+          path: "/admin/users",
           element: <EditUsers />,
         },
       ],
