@@ -1,27 +1,30 @@
+### Get all Users Data
 
+GET http://localhost:3000/admin/users
 
+### Get specific user data by name
 
-GET http://localhost:3000/api/
+GET http://localhost:3000/admin/users/ravi
 
+### Update user data by specific name
 
-
-###
-
-
-GET http://localhost:3000/api/mohith
-
-
-
-
-###
-
-
-POST http://localhost:3000/api
+POST http://localhost:3000/admin/user/ravi
 content-type: application/json
 
 {
-"name": "rgk"
+"age": "700"
 }
+
+### Add new user
+POST http://localhost:3000/admin/users/
+content-type: application/json
+
+{
+    "name":"ravi",
+    "age": "69"
+}
+
+
 
 
 

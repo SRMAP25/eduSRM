@@ -1,4 +1,3 @@
-import React from "react";
 import "./styles/Layout.css";
 import Table from "./Table";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
