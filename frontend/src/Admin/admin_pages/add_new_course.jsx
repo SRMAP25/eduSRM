@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import AdminHeader from './admin_header';
+import  { useState } from 'react';
+
 import '../styles/add_new_course.css';
 
 function AddCoursePage() {
@@ -27,7 +27,7 @@ function AddCoursePage() {
 
   return (
     <div className="add-course-page-wrapper">
-      <AdminHeader />
+
       <div className="add-course-page">
         <h2>Add New Course/Topic</h2>
         <form className="add-course-form" onSubmit={handleSubmit}>

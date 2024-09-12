@@ -8,7 +8,6 @@ const Table = (props) => {
       columns={columns}
       items={items}
       tableHeadProps={{ color: "dark" }}
-      hover
       align="middle"
     />
   );
