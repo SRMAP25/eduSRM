@@ -4,8 +4,8 @@ const mongoose = require('mongoose'); // Erase if already required
 var userSchema = new mongoose.Schema({
     name: {
         type: String,
-        // required:true,
-        // unique:true
+        required: true,
+        unique: true
     }
 });
 

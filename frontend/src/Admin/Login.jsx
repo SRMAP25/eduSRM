@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import "./styles/admin_login_page.css"
 import { Link } from 'react-router-dom';
-
-
-
 
 const Login = () => {
   const [values, setValues] = useState({

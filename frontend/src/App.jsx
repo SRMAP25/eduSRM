@@ -2,14 +2,15 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Layout from "./Admin/Layout";
-import Dashboard from "./Admin/Dashboard";
+// import Dashboard from "./Admin/Dashboard";
 import CourseView from "./Admin/CourseView";
 import EditCourses from "./Admin/EditCourses";
 import Login from "./Admin/Login";
 import EditTopics from "./Admin/EditTopics";
-import HeroSection from "./Pages/HeroSection"
-import SignUp from "./Pages/SignUp"
+import HeroSection from "./Pages/HeroSection";
+import SignUp from "./Pages/SignUp";
 import EditUsers from "./Admin/EditUsers";
+import AddCoursePage from "./Admin/admin_pages/add_new_course";
 
 function App() {
   const router = createBrowserRouter([
@@ -31,7 +32,7 @@ function App() {
       children: [
         {
           path: "/admin/dashboard",
-          element: <Dashboard />,
+          element: <AddCoursePage />,
         },
         {
           path: "/admin/courses",
@@ -44,10 +45,27 @@ function App() {
         {
           path: "/admin/edit-topics",
           element: <EditTopics />,
-        },{
-          path: "/admin/edit-users",
+        },
+        {
+          path: "/admin/users",
           element: <EditUsers />,
         },
+      ],
+    },
+    {
+      path: "/user",
+      element: <Layout />,
+      children: [
+        {
+          path: "/user/dashboard",
+          element: <AddCoursePage />,
+        },
+        {
+          path: "/user/courses",
+          element: <CourseView />,
+        },
+        
+        
       ],
     },
   ]);

@@ -1,14 +1,10 @@
-
-
-
-GET http://localhost:3000/api/
-
-
+### Get all Users Data
+GET http://localhost:3000/admin/users
 
 ###
 
 
-GET http://localhost:3000/api/get_course
+GET http://localhost:3000/api/mohith
 
 
 
@@ -20,75 +16,9 @@ POST http://localhost:3000/api
 content-type: application/json
 
 {
-"name": "get_course"
-}
-###
-
-POST http://localhost:3000/api/add_course/
-content-type: application/json
-
-{
-  "courseName": "Yourajbdsfs Course gfhgh",
-  "courseDescription": "Your Cousdfrse Description"
+"name": "rgk"
 }
 
-###
-GET http://localhost:3000/api/get_course
-Content-type: application/json
 
 
-###
-GET http://localhost:3000/api/get_specific_course/Yourajbdsfs Course gfhgh
-Content-type: application/json
-
-###
-POST http://localhost:3000/api/edit_course/
-content-type: application/json
-
-{
-  "courseId":1,
-  "courseName":"HTML",
-  "description":"Hyper text Mark up language"
-}
-
-###
-POST http://localhost:3000/api/add_topics_to_course/
-content-type: application/json
-
-{
-  "courseId":1,
-  "topics":[
-    {
-      "topicId":1,
-      "title":"HTML tables",
-      "sources":"https://chatgpt.com/c/8a07d750-eb0c-46f6-96f8-71349485392e",
-      "description":"hjvshd",
-      "duration":123
-    },
-    {
-      "topicId":2,
-      "title":"HTML headers",
-      "sources":"https://chatgpt.com/c/8a07d750-eb0c-46f6-96f8-71349485392e",
-      "description":"hjvshdakjd",
-      "duration":1
-    }
-  ]
-}
-
-###
-POST http://localhost:3000/api/edit_topic/
-content-type: application/json
-
-{
-    "topicId":1,
-    "courseId":1,
-    "title":"CSS styles",
-    "sources":"https://chatgpt.com/c/8a07d750-eb0c-46f6-96f8-71349485392e",
-    "description":"hjvshd",
-    "duration":123
-}
-
-###
-GET http://localhost:3000/api/get_topics_of_a_course/1
-content-type: application/json
 
